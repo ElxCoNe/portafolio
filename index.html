@@ -1,36 +1,103 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio</title>
-    <link rel="stylesheet" href="./style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mi portafolio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <h1>Portafolio Juan Camilo Hernandez</h1>
 
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header-container">
+      <h1 class="logo">MILO</h1>
+      <nav class="main-nav">
+        <a href="#inicio">Inicio</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#about">Sobre mí</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
 
-    </header>
+  <!-- HERO -->
+  <section class="hero" id="inicio">
+    <div class="container hero-container">
+      <div class="hero-left">
+        <h2>Hola, soy <span>Milo</span></h2>
+        <p>
+          Desarrollador 
+        </p>
+        <a href="#about" class="btn btn-primary">En contrucción</a>
+      </div>
+      <div class="hero-right">
+        <img src="milo-hero.png" alt="Milo programando" />
+      </div>
+    </div>
+  </section>
 
-    <table>
-        <tr>
-           <td>
-                <a href="https://github.com/ElxCoNe/m1_python_moodle_week_1">Actividad Moddle</a>
-           </td>
-        </tr>
-        <tr>
-            <td>
-                <a href="https://github.com/ElxCoNe/m1_python_actividad_1">Actividad 1</a>
-                <a href="https://github.com/ElxCoNe/m1_python_actividad_2">Actividad 2</a>
+  <!-- PROYECTOS -->
+  <main>
+    <section class="projects" id="proyectos">
+      <div class="container">
+        <h2>Moddle</h2>
+        <div class="projects-grid">
+          <div class="project-card">
+            <h3>m1_python_moodle_week_1</h3>
+            <p><a href="https://github.com/ElxCoNe/m1_python_moodle_week_1">Moodle week1</a></p>
+          </div>
+          <div class="project-card">
+            <h3>m1_python_moodle_week_2</h3>
+            <p><p><a href="https://github.com/ElxCoNe/m1_python_moodle_week_2">Moodle week1</a></p></p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-            </td>
-            
-        </tr>
+    <section class="projects" id="proyectos">
+      <div class="container">
+        <h2>Ejercicios</h2>
+        <div class="projects-grid">
+          <div class="project-card">
+            <h3>Actividad 1</h3>
+            <p><a href="https://github.com/ElxCoNe/m1_python_actividad_1">Actividad 1</a></p>
+            <a href="https://elxcone.github.io/m1_python_actividad_1/">Atividad 1 page</a>
+          </div>
+          <div class="project-card">
+            <h3>Actividad 2</h3>
+            <p><a href="https://github.com/ElxCoNe/m1_python_actividad_2">Actividad 2</a></p>
+          </div>
+          <div class="project-card">
+            <h3>Actividad 3</h3>
+            <p><a href="https://github.com/ElxCoNe/m1_python_actividad_3">Actividad 3</a></p>
+          </div>
+           <div class="project-card">
+            <h3>Actividad 4</h3>
+            <p><a href="https://github.com/ElxCoNe/m1_python_actividad_4">Actividad 4</a></p>
+          </div>            
+        </div>
+      </div>
+    </section>
 
-        
-    </table>
+    <!-- SOBRE MÍ -->
+    <section class="about" id="about">
+      <div class="container">
+        <h2>Sobre mí</h2>
+        <p>
+          Soy un estudiante de desarrollo de software con interés en
+          programación backend.
+        </p>
+      </div>
+    </section>
+  </main>
 
-    
+  <!--FOOTER -->
+  <footer class="site-footer" id="contacto">
+    <div class="container">
+      <p>&copy; 2025 Milo. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
 </body>
 </html>
