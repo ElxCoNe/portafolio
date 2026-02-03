@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 100%;
+}
+
 :root {
   --bg-color: #0d0d0d;
   --text-color: #eaeaea;
@@ -25,6 +29,10 @@ body {
   margin: 0 auto;
 }
 
+.muted {
+  color: #b7b7b7;
+}
+
 /* HEADER */
 .site-header {
   background: rgba(0, 0, 0, 0.8);
@@ -39,7 +47,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
+  gap: 1rem;
 }
 
 .logo {
@@ -100,7 +108,7 @@ body {
   padding: 0.8rem 1.6rem;
   border-radius: 6px;
   text-decoration: none;
-  transition: background var(--transition);
+  transition: background var(--transition), transform var(--transition);
 }
 
 .btn-primary {
@@ -110,6 +118,7 @@ body {
 
 .btn-primary:hover {
   background: #5848ff;
+  transform: translateY(-2px);
 }
 
 .hero-right img {
@@ -131,6 +140,7 @@ body {
 }
 
 .projects-grid {
+  list-style: none;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
@@ -147,6 +157,15 @@ body {
   transform: translateY(-8px);
 }
 
+.project-card a {
+  color: var(--text-color);
+  transition: color var(--transition);
+}
+
+.project-card a:hover {
+  color: var(--accent-color);
+}
+
 /* SOBRE MÍ */
 .about {
   padding: 5rem 0;
@@ -156,11 +175,91 @@ body {
   margin-bottom: 1rem;
 }
 
-/* FOOTER */
-.site-footer {
-  background: #080808;
-  text-align: center;
-  padding: 2rem 0;
-  color: #888;
-  font-size: 0.9rem;
+/* CONTACTO */
+.contact {
+  padding: 5rem 0;
+  background: #0f0f0f;
+}
+
+.contact h2 {
+  margin-bottom: 0.5rem;
+}
+
+.contact-form {
+  margin-top: 1.5rem;
+  display: grid;
+  gap: 1rem;
+  max-width: 650px;
+}
+
+.contact-form label {
+  display: grid;
+  gap: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.9rem 1rem;
+  border-radius: 10px;
+  border: 1px solid #2a2a2a;
+  background: #121212;
+  color: var(--text-color);
+  outline: none;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: var(--accent-color);
+}
+
+
+.gallery-title {
+  margin: 1rem 0 1.2rem;
+}
+
+.pets-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+}
+
+.pets-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.pets-flex .pet-card {
+  width: min(320px, 100%);
+}
+
+.pet-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+  margin-bottom: 1rem;
+}
+
+.is-hidden {
+  display: none !important;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 1px solid var(--accent-color);
+  color: var(--text-color);
+}
+
+.btn-outline:hover {
+  background: rgba(108, 99, 255, 0.15);
 }
